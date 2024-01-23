@@ -99,6 +99,7 @@ var p = {
     //lastName: "Me" //lastName is optional
 };
 fullName(p);
+//classes
 var Employee = /** @class */ (function () {
     function Employee(name) {
         this.employeeName = name;
@@ -111,6 +112,7 @@ var Employee = /** @class */ (function () {
 var employee1 = new Employee('Marina');
 console.log(employee1.employeeName);
 employee1.greet();
+//inheritance
 var Manager = /** @class */ (function (_super) {
     __extends(Manager, _super);
     function Manager(managerName) {
@@ -125,3 +127,6 @@ var m1 = new Manager('Bruce');
 m1.delegateWork();
 m1.greet();
 console.log(m1.employeeName);
+//Access modifiers
+//by default each class member is public
+//protected can be accessed by child classes but not aoutside the class
